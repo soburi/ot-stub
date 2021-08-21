@@ -1,0 +1,13 @@
+# The location of the build configuration file.
+buildconfig = "//build/config/BUILDCONFIG.gn"
+
+# CHIP uses angle bracket includes.
+check_system_includes = true
+
+default_args = {
+  target_cpu = "arm"
+  target_os = "freertos"
+
+  import("//args.gni")
+}
+
