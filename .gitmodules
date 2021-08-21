@@ -1,3 +1,6 @@
 [submodule "openthread"]
 	path = openthread
 	url = https://github.com/openthread/openthread
+[submodule "third_party/pigweed/repo"]
+	path = third_party/pigweed/repo
+	url = https://github.com/google/pigweed.git
