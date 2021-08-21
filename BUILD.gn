@@ -1,0 +1,26 @@
+import("//build_overrides/build.gni")
+
+executable("cli") {
+  sources = [
+    "openthread/examples/apps/cli/cli_uart.cpp",
+    "openthread/examples/apps/cli/main.c"
+  ]
+
+  deps = [
+    "./openthread:libopenthread-ftd",
+    "./openthread:libopenthread-cli-ftd",
+  ]
+
+  include_dirs = [
+    "openthread/src/core",
+    "openthread/src",
+    "openthread/examples/platforms",
+  ]
+
+#group("libopenthread-mtd") {
+#group("libopenthread-radio") {
+#group("libopenthread-cli-ftd") {
+#group("libopenthread-cli-mtd") {
+#group("libopenthread-spinel-ncp") {
+#group("libopenthread-spinel-rcp") {:wq!
+}
